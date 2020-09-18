@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <head>
+        <title>Formulário Pet shop</title>
+        <meta charset="utf-8">
+        
+        <style type="text/css">
+            bory{
+                font-family: "Century Gothic";
+            }
+            form{
+                width:500px;
+                margin-right: auto;
+                margin-left: auto;
+                position: relative;
+                background: rgb(2,0,36);
+              
+            }
+          
+            
+            input[type="text"], 
+            input[type="password"],
+            input[type="number"] {
+                border-radius: 5px;
+                position: absolute;
+                left: 95px;
+                width: 350px; 
+            }
+            
+            legend {
+                padding:3px;
+                background-color:#aeeeee;
+                border: solid 1px #fff;
+                position: relative;
+                    
+            }
+            fieldset{
+                background-color:#4682b4;
+                border: solid 1px #fff;
+                position: relative;
+                margin-bottom: 30px;
+            }
+            select{
+                border-radius: 5px;
+                left: 80px;
+                width: 330px;
+                
+            }
+        </style>
+    <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:ReferenceId msdt:dt="string">a820706e-868a-4ad4-bec8-666ef1c7a91d</mso:ReferenceId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    
+    <bory>
+        
+        <h1>Agenda de banho e tosa</h1>
+        <form action="" method="post" name="curso">
+           
+            <fieldset>
+                <legend>Proprietário</legend>
+                
+            <p><label for="nome">Nome:</label> <input type="text" name="nome" required></p>
+            <p><label for="senha">Senha:</label> <input type="password" name="senha"required></p>
+            <p> <label for="endereco">Endereço:</label> <input type="text" name="enderco" required></p>
+            <p><label for="telefone">Telefone:</label> <input type="number" name="telefone" required></p>
+            
+            </fieldset>
+            
+            <fieldset>
+            <legend>PET</legend>
+                
+                <p><label for="nome">Nome:</label> <input type="text" name="nome" required></p>
+               
+                Raça: <select name="raça"> 
+                    
+                    <option></option>
+                    <option value="001">Pastor Alemão</option>
+                    <option value="002">Buldogue</option>
+                    <option value="003">Poodle</option>
+                    <option value="004">Labrador</option>
+                    <option value="005">Golden</option>
+                    <option value="006">Beagle</option>
+                    <option value="007">Pug</option>
+                    <option value="008">Chihuahua</option>
+                    <option value="009">Maltês</option>
+                    <option value="010">Pinscher</option>
+                    <option value="011">Yorkshire Terrier</option>
+                    <option value="0012">Vira Lata</option>
+                </select>
+                
+                <h3>Cor:</h3>
+                
+                <p><input type="radio" name="cor" value="b">Branco</p>
+                <p><input type="radio" name="cor" value="car">Caramelo</p>
+                <p><input type="radio" name="cor" value="cho">Chocolate</p>
+                <p><input type="radio" name="cor" value="p">Preto</p>
+                <p><input type="radio" name="cor" value="o">Outro <input typr="text" name="outra cor"></p>
+                
+        
+            </fieldset>
+            
+            <fieldset>
+            <legend>Data</legend>
+                
+                <p><label for="dia">Dia:</label> <input type="number" min="01" max="31" name="dia" required></p>
+                
+                <p><label for="mes">Mês:</label><select name="mes">
+                    <option></option>
+                    <option value="001">Janeiro</option>
+                    <option value="002">Fevereiro</option>
+                    <option value="003">Março</option>
+                    <option value="004">Abril</option>
+                    <option value="005">Maio</option>
+                    <option value="006">Junho</option>
+                    <option value="007">Julho</option>
+                    <option value="008">Agosto</option>
+                    <option value="009">Setembro</option>
+                    <option value="010">Outubro</option>
+                    <option value="011">Novembro</option>
+                    <option value="0012">Dezembro</option>
+                </select>
+                    
+                <p><label for="ano">Ano:</label> <input type="number" min="2020" name="ano" required></p>
+                <p>Hora:<input type="time" min="9" max="19" name="hora" required></p>
+            </fieldset>
+            
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </form>
+    </bory>
+</html>
